@@ -34,8 +34,7 @@
     "slate-simulator": "^0.1.5"
   },
   "scripts": {
-    "test": "jest",
-    "build": "babel --out-dir ./lib ./src"
+    "test": "jest"
   },
   "jest": {
     "preset": "react-native"
