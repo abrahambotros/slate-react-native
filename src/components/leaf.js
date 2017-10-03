@@ -1,7 +1,7 @@
 
 import Debug from 'debug'
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, TextInput } from 'react-native'
 import Types from 'prop-types'
 import SlateTypes from 'slate-prop-types'
 
@@ -111,13 +111,13 @@ class Leaf extends React.Component {
 
     // COMPAT: If the text is empty and it's the only child, we need to render a
     // <br/> to get the block to have the proper height.
-    if (text == '' && parent.kind == 'block' && parent.text == '') return <Text>{'\n'}</Text>
+    if (text == '' && parent.kind == 'block' && parent.text == '') return <TextInput value={'\n'} />
 
     // COMPAT: If the text is empty otherwise, it's because it's on the edge of
     // an inline void node, so we render a zero-width space so that the
     // selection can be inserted next to it still.
     if (text == '') {
-      return <View data-slate-zero-width>{' '}</View>
+      return <View data-slate-zero-width><TextInput value={' '} /></View>
     }
 
     // COMPAT: Browsers will collapse trailing new lines at the end of blocks,
