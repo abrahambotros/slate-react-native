@@ -25,7 +25,6 @@ const debug = Debug('slate:core')
  *
  * @param {Object} options
  *   @property {Element} placeholder
- *   @property {String} placeholderStyle
  *   @property {Object} placeholderStyle
  * @return {Object}
  */
@@ -33,7 +32,6 @@ const debug = Debug('slate:core')
 function Plugin(options = {}) {
   const {
     placeholder,
-    placeholderStyle,
     placeholderStyle,
   } = options
 
@@ -666,7 +664,7 @@ function Plugin(options = {}) {
       <Content
         autoCorrect={props.autoCorrect}
         autoFocus={props.autoFocus}
-        style={props.style}
+        className={props.className}
         children={props.children}
         editor={editor}
         onBeforeInput={editor.onBeforeInput}
@@ -707,7 +705,6 @@ function Plugin(options = {}) {
           {props.children}
           {placeholder
             ? <Placeholder
-                style={placeholderStyle}
                 node={props.node}
                 parent={props.state.document}
                 state={props.state}

@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { View } from 'react-native'
+import { View, TextInput } from 'react-native'
 import SlateTypes from 'slate-prop-types'
 import Types from 'prop-types'
 
@@ -89,7 +89,7 @@ class Placeholder extends React.Component {
     const isVisible = this.isVisible()
     if (!isVisible) return null
 
-    const { children, style } = this.props
+    const { children } = this.props
     let { style } = this.props
 
     if (typeof children === 'string' && style == null) {
@@ -109,7 +109,9 @@ class Placeholder extends React.Component {
 
     return (
       <View contentEditable={false} style={styles}>
-        {children}
+        {
+          typeof children === 'string' ? <TextInput value={children} /> : {children}
+        }
       </View>
     )
   }

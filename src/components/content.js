@@ -2,6 +2,7 @@
 import Base64 from 'slate-base64-serializer'
 import Debug from 'debug'
 import React from 'react'
+import { View } from 'react-native'
 import SlateTypes from 'slate-prop-types'
 import Types from 'prop-types'
 import keycode from 'keycode'
@@ -69,8 +70,7 @@ class Content extends React.Component {
    */
 
   static defaultProps = {
-    style: {},
-    tagName: 'View',
+    style: {}
   }
 
   /**
@@ -520,7 +520,6 @@ class Content extends React.Component {
   render() {
     const { props } = this
     const { style, readOnly, state, tabIndex, role, tagName } = props
-    const Container = tagName
     const { document, selection } = state
     const indexes = document.getSelectionIndexes(selection, selection.isFocused)
     const children = document.nodes.toArray().map((child, i) => {
@@ -528,14 +527,7 @@ class Content extends React.Component {
       return this.renderNode(child, isSelected)
     })
 
-    const style = {
-      // Prevent the default outline styles.
-      outline: 'none',
-      // Preserve adjacent whitespace and new lines.
-      whiteSpace: 'pre-wrap',
-      // Allow words to break if they are too long.
-      wordWrap: 'break-word',
-      // Allow for passed-in styles to override anything.
+    const contentStyle = {
       ...props.style,
     }
 
@@ -544,7 +536,7 @@ class Content extends React.Component {
     debug('render', { props })
 
     return (
-      <Container
+      <View
         data-slate-editor
         key={this.tmp.forces}
         ref={this.ref}
@@ -570,13 +562,13 @@ class Content extends React.Component {
         onSelect={this.onSelect}
         autoCorrect={props.autoCorrect ? 'on' : 'off'}
         spellCheck={spellCheck}
-        style={style}
+        style={contentStyle}
         role={readOnly ? null : (role || 'textbox')}
         tabIndex={tabIndex}
       >
         {children}
         {this.props.children}
-      </Container>
+      </View>
     )
   }
 
