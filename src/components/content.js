@@ -40,7 +40,7 @@ class Content extends React.Component {
     autoCorrect: Types.bool.isRequired,
     autoFocus: Types.bool.isRequired,
     children: Types.array.isRequired,
-    className: Types.string,
+    style: Types.object,
     editor: Types.object.isRequired,
     onBeforeInput: Types.func.isRequired,
     onBlur: Types.func.isRequired,
@@ -519,7 +519,7 @@ class Content extends React.Component {
 
   render() {
     const { props } = this
-    const { className, readOnly, state, tabIndex, role, tagName } = props
+    const { style, readOnly, state, tabIndex, role, tagName } = props
     const Container = tagName
     const { document, selection } = state
     const indexes = document.getSelectionIndexes(selection, selection.isFocused)
@@ -551,7 +551,7 @@ class Content extends React.Component {
         data-key={document.key}
         contentEditable={!readOnly}
         suppressContentEditableWarning
-        className={className}
+        style={style}
         onBeforeInput={this.onBeforeInput}
         onBlur={this.onBlur}
         onFocus={this.onFocus}

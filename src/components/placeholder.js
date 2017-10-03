@@ -20,7 +20,7 @@ class Placeholder extends React.Component {
 
   static propTypes = {
     children: Types.any.isRequired,
-    className: Types.string,
+    style: Types.style,
     firstOnly: Types.bool,
     node: SlateTypes.node.isRequired,
     parent: SlateTypes.node,
@@ -49,7 +49,7 @@ class Placeholder extends React.Component {
   shouldComponentUpdate = (props, state) => {
     return (
       props.children != this.props.children ||
-      props.className != this.props.className ||
+      props.style != this.props.style ||
       props.firstOnly != this.props.firstOnly ||
       props.parent != this.props.parent ||
       props.node != this.props.node ||
@@ -79,7 +79,7 @@ class Placeholder extends React.Component {
   /**
    * Render.
    *
-   * If the placeholder is a string, and no `className` or `style` has been
+   * If the placeholder is a string, and no `style` has been
    * passed, give it a default style of lowered opacity.
    *
    * @return {Element}
@@ -89,7 +89,7 @@ class Placeholder extends React.Component {
     const isVisible = this.isVisible()
     if (!isVisible) return null
 
-    const { children, className } = this.props
+    const { children, style } = this.props
     let { style } = this.props
 
     if (typeof children === 'string' && style == null) {
