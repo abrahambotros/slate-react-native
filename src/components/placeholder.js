@@ -110,7 +110,7 @@ class Placeholder extends React.Component {
     return (
       <View contentEditable={false} style={styles}>
         {
-          typeof children === 'string' ? <TextInput value={children} /> : {children}
+          typeof children === 'string' ? <TextInput underlineColorAndroid="transparent" multiline value={children} /> : {children}
         }
       </View>
     )

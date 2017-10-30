@@ -93,9 +93,14 @@ class Leaf extends React.Component {
     this.debug('render', { props })
 
     return (
-      <View data-offset-key={offsetKey}>
+      <TextInput
+        multiline={true}
+        underlineColorAndroid="transparent"
+        data-offset-key={offsetKey}
+        value={this.props.text || ''}
+      >
         {this.renderMarks(props)}
-      </View>
+      </TextInput>
     )
   }
 
@@ -111,25 +116,20 @@ class Leaf extends React.Component {
 
     // COMPAT: If the text is empty and it's the only child, we need to render a
     // <br/> to get the block to have the proper height.
-    if (text == '' && parent.kind == 'block' && parent.text == '') return <TextInput value={'\n'} />
+    if (text == '' && parent.kind == 'block' && parent.text == '') return <TextInput multiline underlineColorAndroid="transparent" value={'\n'} />
 
     // COMPAT: If the text is empty otherwise, it's because it's on the edge of
     // an inline void node, so we render a zero-width space so that the
     // selection can be inserted next to it still.
     if (text == '') {
-      return <View data-slate-zero-width><TextInput value={' '} /></View>
+      return <View data-slate-zero-width><TextInput multiline underlineColorAndroid="transparent" value={' '} /></View>
     }
 
-    // COMPAT: Browsers will collapse trailing new lines at the end of blocks,
-    // so we need to add an extra trailing new lines to prevent that.
     const lastText = block.getLastText()
     const lastChar = text.charAt(text.length - 1)
     const isLastText = node == lastText
     const isLastRange = index == ranges.size - 1
-    if (isLastText && isLastRange && lastChar == '\n') return `${text}\n`
-
-    // Otherwise, just return the text.
-    return text
+    return <TextInput multiline underlineColorAndroid="transparent" value={text} />
   }
 
   /**
