@@ -3,8 +3,8 @@
  * Components.
  */
 
-import Editor from './src/components/editor'
-import Placeholder from './src/components/placeholder'
+import Editor from './components/editor'
+import Placeholder from './components/placeholder'
 
 /**
  * Export.
