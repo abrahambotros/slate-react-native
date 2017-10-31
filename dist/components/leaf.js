@@ -93,14 +93,11 @@ class Leaf extends React.Component {
     this.debug('render', { props })
 
     return (
-      <TextInput
-        multiline={true}
-        underlineColorAndroid="transparent"
+      <View
         data-offset-key={offsetKey}
-        value={this.props.text || ''}
       >
         {this.renderMarks(props)}
-      </TextInput>
+      </View>
     )
   }
 
@@ -122,7 +119,7 @@ class Leaf extends React.Component {
     // an inline void node, so we render a zero-width space so that the
     // selection can be inserted next to it still.
     if (text == '') {
-      return <View data-slate-zero-width><TextInput multiline underlineColorAndroid="transparent" value={' '} /></View>
+      return <TextInput data-slate-zero-width multiline underlineColorAndroid="transparent" value={' '} />
     }
 
     const lastText = block.getLastText()

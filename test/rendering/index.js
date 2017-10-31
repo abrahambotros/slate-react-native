@@ -2,7 +2,7 @@ import React from 'react'
 import 'react-native'
 import renderer from 'react-test-renderer'
 import fs from 'fs-promise' // eslint-disable-line import/no-extraneous-dependencies
-import { Editor } from '../../src'
+import { Editor } from '../../dist'
 import { basename, extname, resolve } from 'path'
 
 /**
@@ -38,7 +38,7 @@ describe('rendering', () => {
 
       const actual = renderer.create(<Editor {...props} />).toJSON()
       const result = renderer.create(<Output />).toJSON()
-      expect(result).toMatchSnapshot()
+      expect(actual).toMatchSnapshot()
     })
   })
 })

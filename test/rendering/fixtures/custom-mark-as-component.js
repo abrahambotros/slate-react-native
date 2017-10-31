@@ -2,15 +2,13 @@
 
 import h from '../../helpers/h'
 import React from 'react'
-import { View, Text } from 'react-native'
+import { TextInput } from 'react-native'
 
 class Bold extends React.Component {
 
   render() {
     return (
-      React.createElement(View, { ...this.props.attributes },
-        React.createElement(Text, {style: {fontWeight: 'bold'} }, this.props.children)
-      )
+        React.createElement(TextInput, {style: {fontWeight: 'bold'}, ...this.props.attributes }, this.props.children)
     )
   }
 

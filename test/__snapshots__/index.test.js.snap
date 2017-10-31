@@ -2,102 +2,206 @@
 
 exports[`slate-react-native rendering custom-block 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="55"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
-  <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
+  <View
+    data-key="52"
+    onDragStart={[Function]}
+  >
+    <View
+      data-key="51"
     >
-      word
-    </Text>
+      <View
+        data-offset-key="51-0"
+      >
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="word"
+        />
+      </View>
+    </View>
   </View>
 </View>
 `;
 
 exports[`slate-react-native rendering custom-block-multiple 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="44"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
-  <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
+  <TextInput
+    data-key="35"
+    onDragStart={[Function]}
+  >
+    <View
+      data-key="34"
     >
-      word
-    </Text>
-  </View>
-  <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
+      <View
+        data-offset-key="34-0"
+      >
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="word"
+        />
+      </View>
+    </View>
+  </TextInput>
+  <TextInput
+    data-key="37"
+    onDragStart={[Function]}
+  >
+    <View
+      data-key="36"
     >
-      word
-    </Text>
-  </View>
-  <View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
+      <View
+        data-offset-key="36-0"
+      >
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="word"
+        />
+      </View>
+    </View>
+  </TextInput>
+  <TextInput
+    data-key="39"
+    onDragStart={[Function]}
+  >
+    <View
+      data-key="38"
     >
-      word
-    </Text>
-  </View>
+      <View
+        data-offset-key="38-0"
+      >
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="word"
+        />
+      </View>
+    </View>
+  </TextInput>
 </View>
 `;
 
 exports[`slate-react-native rendering custom-block-void 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="49"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
     data-slate-void={true}
+    onClick={[Function]}
+    onDragEnter={[Function]}
+    onDragLeave={[Function]}
+    onDrop={[Function]}
   >
     <View
       style={
         Object {
+          "alignItems": "center",
           "backgroundColor": "transparent",
           "flex": 1,
-          "width": 0,
         }
       }
     >
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          data-slate-zero-width="true"
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-           
-        </Text>
+      <View
+        data-offset-key="50-0"
+      >
+        <TextInput
+          data-slate-zero-width={true}
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
     <View
-      contenteditable={false}
+      contentEditable={false}
       style={
         Object {
+          "alignItems": "center",
           "flex": 1,
           "width": "100%",
         }
       }
     >
       <Image
+        data-key="46"
+        onDragStart={[Function]}
         source={
           Object {
             "uri": "https://example.com/image.png",
@@ -111,47 +215,79 @@ exports[`slate-react-native rendering custom-block-void 1`] = `
 
 exports[`slate-react-native rendering custom-decorator 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="60"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="57"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="56"
+    >
+      <View
+        data-offset-key="56-0"
       >
-        o
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontWeight": "bold",
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="o"
+        />
+      </View>
+      <View
+        data-offset-key="56-1"
+      >
+        <span
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
           }
-        }
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="n"
+          />
+        </span>
+      </View>
+      <View
+        data-offset-key="56-2"
       >
-        n
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-      >
-        e
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="e"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -159,53 +295,86 @@ exports[`slate-react-native rendering custom-decorator 1`] = `
 
 exports[`slate-react-native rendering custom-inline 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="95"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="92"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
+    <View
+      data-key="96"
+    >
+      <View
+        data-offset-key="96-0"
+      >
+        <TextInput
           data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-           
-        </Text>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
     <View
+      data-key="89"
       onClick={[Function]}
+      onDragStart={[Function]}
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+      <View
+        data-key="88"
       >
-        word
-      </Text>
-    </View>
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
+        <View
+          data-offset-key="88-0"
         >
-           
-        </Text>
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="word"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      data-key="91"
+    >
+      <View
+        data-offset-key="91-0"
+      >
+        <TextInput
+          data-slate-zero-width={true}
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
   </View>
@@ -214,103 +383,152 @@ exports[`slate-react-native rendering custom-inline 1`] = `
 
 exports[`slate-react-native rendering custom-inline-multiple 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="74"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="71"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
+    <View
+      data-key="75"
+    >
+      <View
+        data-offset-key="75-0"
+      >
+        <TextInput
           data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-           
-        </Text>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
     <View
+      data-key="62"
       onClick={[Function]}
+      onDragStart={[Function]}
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+      <View
+        data-key="61"
       >
-        word
-      </Text>
-    </View>
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
+        <View
+          data-offset-key="61-0"
         >
-           
-        </Text>
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="word"
+          />
+        </View>
       </View>
     </View>
     <View
-      onClick={[Function]}
+      data-key="76"
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+      <View
+        data-offset-key="76-0"
       >
-        word
-      </Text>
-    </View>
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
+        <TextInput
           data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-           
-        </Text>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
     <View
+      data-key="64"
       onClick={[Function]}
+      onDragStart={[Function]}
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+      <View
+        data-key="63"
       >
-        word
-      </Text>
-    </View>
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
+        <View
+          data-offset-key="63-0"
         >
-           
-        </Text>
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="word"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      data-key="77"
+    >
+      <View
+        data-offset-key="77-0"
+      >
+        <TextInput
+          data-slate-zero-width={true}
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
+      </View>
+    </View>
+    <View
+      data-key="66"
+      onClick={[Function]}
+      onDragStart={[Function]}
+    >
+      <View
+        data-key="65"
+      >
+        <View
+          data-offset-key="65-0"
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="word"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      data-key="70"
+    >
+      <View
+        data-offset-key="70-0"
+      >
+        <TextInput
+          data-slate-zero-width={true}
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
   </View>
@@ -319,32 +537,61 @@ exports[`slate-react-native rendering custom-inline-multiple 1`] = `
 
 exports[`slate-react-native rendering custom-inline-void 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="85"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="82"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
+    <View
+      data-key="87"
+    >
+      <View
+        data-offset-key="87-0"
+      >
+        <TextInput
           data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-           
-        </Text>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
     <View
       data-slate-void={true}
+      onClick={[Function]}
+      onDragEnter={[Function]}
+      onDragLeave={[Function]}
+      onDrop={[Function]}
     >
       <View
         style={
@@ -353,41 +600,48 @@ exports[`slate-react-native rendering custom-inline-void 1`] = `
           }
         }
       >
-        <View>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            data-slate-zero-width="true"
-            disabled={false}
-            ellipsizeMode="tail"
-          >
-             
-          </Text>
+        <View
+          data-offset-key="86-0"
+        >
+          <TextInput
+            data-slate-zero-width={true}
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value=" "
+          />
         </View>
       </View>
       <View
-        contenteditable={false}
+        contentEditable={false}
+        style={
+          Object {
+            "alignItems": "center",
+          }
+        }
       >
         <Image
+          data-key="79"
+          onDragStart={[Function]}
           source={
             Object {
-              "uri": "",
+              "uri": undefined,
             }
           }
         />
       </View>
     </View>
-    <View>
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
+    <View
+      data-key="81"
+    >
+      <View
+        data-offset-key="81-0"
+      >
+        <TextInput
           data-slate-zero-width={true}
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-           
-        </Text>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
   </View>
@@ -396,47 +650,79 @@ exports[`slate-react-native rendering custom-inline-void 1`] = `
 
 exports[`slate-react-native rendering custom-mark-as-component 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="101"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="98"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="97"
+    >
+      <View
+        data-offset-key="97-0"
       >
-        one
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontWeight": "bold",
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="one"
+        />
+      </View>
+      <View
+        data-offset-key="97-1"
+      >
+        <TextInput
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
           }
-        }
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="two"
+          />
+        </TextInput>
+      </View>
+      <View
+        data-offset-key="97-2"
       >
-        two
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-      >
-        three
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="three"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -444,41 +730,79 @@ exports[`slate-react-native rendering custom-mark-as-component 1`] = `
 
 exports[`slate-react-native rendering custom-mark-as-function 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="106"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
-  <View>
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+  <View
+    data-key="103"
+    onDragStart={[Function]}
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <View
+      data-key="102"
+    >
+      <View
+        data-offset-key="102-0"
       >
-        one
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontWeight": "bold",
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="one"
+        />
+      </View>
+      <View
+        data-offset-key="102-1"
+      >
+        <TextInput
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
           }
-        }
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="two"
+          />
+        </TextInput>
+      </View>
+      <View
+        data-offset-key="102-2"
       >
-        two
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-      >
-        three
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="three"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -486,47 +810,79 @@ exports[`slate-react-native rendering custom-mark-as-function 1`] = `
 
 exports[`slate-react-native rendering custom-mark-as-object 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="111"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="108"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="107"
+    >
+      <View
+        data-offset-key="107-0"
       >
-        one
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontWeight": "bold",
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="one"
+        />
+      </View>
+      <View
+        data-offset-key="107-1"
+      >
+        <span
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
           }
-        }
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="two"
+          />
+        </span>
+      </View>
+      <View
+        data-offset-key="107-2"
       >
-        two
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-      >
-        three
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="three"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -534,47 +890,75 @@ exports[`slate-react-native rendering custom-mark-as-object 1`] = `
 
 exports[`slate-react-native rendering custom-mark-as-string 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="116"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="113"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="112"
+    >
+      <View
+        data-offset-key="112-0"
       >
-        one
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontWeight": "bold",
-          }
-        }
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="one"
+        />
+      </View>
+      <View
+        data-offset-key="112-1"
       >
-        two
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+        <span
+          className="bold"
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="two"
+          />
+        </span>
+      </View>
+      <View
+        data-offset-key="112-2"
       >
-        three
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="three"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -582,26 +966,53 @@ exports[`slate-react-native rendering custom-mark-as-string 1`] = `
 
 exports[`slate-react-native rendering default-block 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="130"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="127"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="126"
+    >
+      <View
+        data-offset-key="126-0"
       >
-        word
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="word"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -609,46 +1020,90 @@ exports[`slate-react-native rendering default-block 1`] = `
 
 exports[`slate-react-native rendering default-block-with-inline 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="124"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="121"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <View>
-        <View
+    <View
+      data-key="125"
+    >
+      <View
+        data-offset-key="125-0"
+      >
+        <TextInput
           data-slate-zero-width={true}
-        >
-           
-        </View>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
     <View
+      data-key="118"
+      onDragStart={[Function]}
       style={
         Object {
           "position": "relative",
         }
       }
     >
-      <View>
-        <View>
-          word
+      <View
+        data-key="117"
+      >
+        <View
+          data-offset-key="117-0"
+        >
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="word"
+          />
         </View>
       </View>
     </View>
-    <View>
-      <View>
-        <View
+    <View
+      data-key="120"
+    >
+      <View
+        data-offset-key="120-0"
+      >
+        <TextInput
           data-slate-zero-width={true}
-        >
-           
-        </View>
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value=" "
+        />
       </View>
     </View>
   </View>
@@ -657,26 +1112,54 @@ exports[`slate-react-native rendering default-block-with-inline 1`] = `
 
 exports[`slate-react-native rendering empty-block 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="143"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="140"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="139"
+    >
+      <View
+        data-offset-key="139-0"
       >
-         
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="
+"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -684,26 +1167,54 @@ exports[`slate-react-native rendering empty-block 1`] = `
 
 exports[`slate-react-native rendering empty-block-with-inline 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="138"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="135"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="134"
+    >
+      <View
+        data-offset-key="134-0"
       >
-         
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="
+"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -711,11 +1222,35 @@ exports[`slate-react-native rendering empty-block-with-inline 1`] = `
 
 exports[`slate-react-native rendering nested-text-direction 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="154"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="151"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
@@ -723,41 +1258,51 @@ exports[`slate-react-native rendering nested-text-direction 1`] = `
     }
   >
     <View
+      data-key="145"
       dir="rtl"
+      onDragStart={[Function]}
       style={
         Object {
           "position": "relative",
         }
       }
     >
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
+      <View
+        data-key="144"
+      >
+        <View
+          data-offset-key="144-0"
         >
-          مرحبا بالعالم
-        </Text>
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="مرحبا بالعالم"
+          />
+        </View>
       </View>
     </View>
     <View
+      data-key="147"
       dir="rtl"
+      onDragStart={[Function]}
       style={
         Object {
           "position": "relative",
         }
       }
     >
-      <View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
+      <View
+        data-key="146"
+      >
+        <View
+          data-offset-key="146-0"
         >
-          שלום עולם
-        </Text>
+          <TextInput
+            multiline={true}
+            underlineColorAndroid="transparent"
+            value="שלום עולם"
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -766,64 +1311,101 @@ exports[`slate-react-native rendering nested-text-direction 1`] = `
 
 exports[`slate-react-native rendering text-direction 1`] = `
 <View
-  contenteditable={true}
+  autoCorrect="on"
+  contentEditable={true}
+  data-key="165"
   data-slate-editor={true}
+  onBeforeInput={[Function]}
+  onBlur={[Function]}
+  onCompositionEnd={[Function]}
+  onCompositionStart={[Function]}
+  onCopy={[Function]}
+  onCut={[Function]}
+  onDragEnd={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+  onDrop={[Function]}
+  onFocus={[Function]}
+  onInput={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onPaste={[Function]}
+  onSelect={[Function]}
   role="textbox"
+  spellCheck={true}
+  style={Object {}}
+  suppressContentEditableWarning={true}
+  tabIndex={undefined}
 >
   <View
+    data-key="156"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="155"
+    >
+      <View
+        data-offset-key="155-0"
       >
-        Hello, world!
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="Hello, world!"
+        />
+      </View>
     </View>
   </View>
   <View
+    data-key="158"
     dir="rtl"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="157"
+    >
+      <View
+        data-offset-key="157-0"
       >
-        مرحبا بالعالم
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="مرحبا بالعالم"
+        />
+      </View>
     </View>
   </View>
   <View
+    data-key="160"
     dir="rtl"
+    onDragStart={[Function]}
     style={
       Object {
         "position": "relative",
       }
     }
   >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={false}
-        ellipsizeMode="tail"
+    <View
+      data-key="159"
+    >
+      <View
+        data-offset-key="159-0"
       >
-        שלום עולם
-      </Text>
+        <TextInput
+          multiline={true}
+          underlineColorAndroid="transparent"
+          value="שלום עולם"
+        />
+      </View>
     </View>
   </View>
 </View>

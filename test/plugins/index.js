@@ -1,5 +1,5 @@
 
-import CorePlugin from '../../src/plugins/core'
+import CorePlugin from '../../dist/plugins/core'
 import Simulator from 'slate-simulator'
 import assert from 'assert'
 import fs from 'fs'

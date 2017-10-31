@@ -1,4 +1,5 @@
 
+import React from 'react';
 import findDeepestNode from './find-deepest-node'
 
 /**
@@ -12,7 +13,7 @@ import findDeepestNode from './find-deepest-node'
  * @return {Object}
  */
 
-function getCaretPosition(key, offset, state, editor, el) {
+function getCaretPosition(key, offset, state, editor) {
   const { document } = state
   const text = document.getDescendant(key)
   const schema = editor.getSchema()
@@ -32,8 +33,9 @@ function getCaretPosition(key, offset, state, editor, el) {
     return false
   })
 
-  const span = el.querySelector(`[data-offset-key="${key}-${index}"]`)
-  const node = findDeepestNode(span)
+  const Children = React.Children.toArray(editor.props.children);
+  const input = Children.find(child => child.props.key = index);
+  const node = findDeepestNode(input)
   return { node, offset: off }
 }
 
