@@ -14,7 +14,7 @@
     "slate-base64-serializer": "0.1.5",
     "slate-dev-logger": "0.1.6",
     "slate-plain-serializer": "0.1.5",
-    "slate-prop-types": "0.1.5"
+    "slate-prop-types": "0.4.11"
   },
   "peerDependencies": {
     "immutable": "3.8.1",
